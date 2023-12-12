@@ -171,6 +171,9 @@ class PinCodeTextField extends StatefulWidget {
   /// Error animation duration
   final int errorAnimationDuration;
 
+  /// Error text style
+  final TextStyle? errorTextStyle;
+
   /// Whether to show cursor or not
   final bool showCursor;
 
@@ -259,6 +262,7 @@ class PinCodeTextField extends StatefulWidget {
     this.errorTextSpace = 16,
     this.errorTextDirection = TextDirection.ltr,
     this.errorTextMargin = EdgeInsets.zero,
+    this.errorTextStyle,
     this.enablePinAutofill = true,
     this.errorAnimationDuration = 500,
     this.boxShadows,
@@ -803,6 +807,7 @@ class _PinCodeTextFieldState extends State<PinCodeTextField>
             focusedBorder: InputBorder.none,
             disabledBorder: InputBorder.none,
             errorBorder: InputBorder.none,
+            errorStyle: widget.errorTextStyle,
             focusedErrorBorder: InputBorder.none,
           ),
           style: TextStyle(

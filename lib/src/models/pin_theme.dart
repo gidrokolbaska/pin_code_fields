@@ -31,13 +31,13 @@ class PinTheme {
   /// Width of the input field which is currently selected. Default is 2
   final double selectedBorderWidth;
 
-    /// Width of the input fields which don't have inputs. Default is 2
+  /// Width of the input fields which don't have inputs. Default is 2
   final double inactiveBorderWidth;
 
   /// Width of the input fields if the [PinCodeTextField] is disabled. Default is 2
   final double disabledBorderWidth;
 
-    /// Width of the input field when in error mode. Default is 2
+  /// Width of the input field when in error mode. Default is 2
   final double errorBorderWidth;
 
   /// Border radius of each pin code field
@@ -127,8 +127,8 @@ class PinTheme {
       selectedFillColor: selectedFillColor ?? defaultValues.selectedFillColor,
       shape: shape ?? defaultValues.shape,
       fieldOuterPadding: fieldOuterPadding ?? defaultValues.fieldOuterPadding,
-      activeBoxShadows: activeBoxShadow ?? [],
-      inActiveBoxShadows: inActiveBoxShadow ?? [],
+      activeBoxShadows: activeBoxShadow,
+      inActiveBoxShadows: inActiveBoxShadow,
       activeBorderWidth: activeBorderWidth ?? defaultValues.activeBorderWidth,
       inactiveBorderWidth:
           inactiveBorderWidth ?? defaultValues.inactiveBorderWidth,
