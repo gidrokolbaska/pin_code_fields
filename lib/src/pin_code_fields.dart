@@ -967,7 +967,9 @@ class _PinCodeTextFieldState extends State<PinCodeTextField>
         _focusNode!.requestFocus();
       }
     } else {
-      _focusNode!.requestFocus();
+      if (!_focusNode!.hasFocus) {
+        _focusNode!.requestFocus();
+      }
     }
   }
 
